@@ -1,16 +1,25 @@
-<!DOCTYPE html >
-<html ng-app="CounterWatcher">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Digest Cycle</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<!DOCTYPE html>
+<html lang='fr' ng-app='CounterApp'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href = 'css/style.css' rel = 'stylesheet'>
+        <title>ng-repeat</title>
+    </head>
+    <body>
+        <h1>The Digest Cycle</h1>
+        <div id ='main-content' ng-controller='CounterController'>
+            <button ng-click="showNumberOfWatchers()">
+                Log # of Watchers
+            </button>
+
+
+
+
+
+        </div>
+    </body>
     <script src='scr/angular.min.js'></script>
-    <script src="scr/app.js"></script>
-</head>
-<body ng-controller="CounterController">
-    <h1>AngularJs Digets Cycle</h1>
-    
-</body>
+    <script src='scr/app.js'></script>
+    <!-- Autre JS si besoin -->
 </html>

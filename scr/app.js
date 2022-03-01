@@ -1,10 +1,28 @@
 (function(){
-    'use strict';
-    angular.module('CounterWatcher',[]).controller('CounterController',CounterController);
-    CounterController.$inject(['$scope']);
+'use strict';
+    angular.module('CounterApp',[])
+        .controller('CounterController',CounterController);
+
+    CounterController.$inject = ['$scope'];
     function CounterController($scope){
+        $scope.onceCounter =0;
+
+
+        $scope.showNumberOfWatchers = function(){
+            console.log('Number(#) of watchers : ', $scope.$$watchersCount);
+        };
 
     }
+
+
+
+
+
+
+
+
+
+
 
 
 })();
