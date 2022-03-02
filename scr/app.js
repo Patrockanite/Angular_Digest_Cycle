@@ -17,9 +17,11 @@
                 console.log($scope.onceCounter);
 
             };
-
-
-
+            
+            $scope.$watch('oneCounter', function (newValue, oldValue){
+                console.log("old value : ",oldValue);
+                console.log("new value : ",newValue);
+            });
         }
 
 
