@@ -13,15 +13,16 @@
             };
 
             $scope.countOnce = function(){
-                $scope.onceCounter = 1;
+                $scope.onceCounter++;
                 console.log($scope.onceCounter);
 
             };
             
-            $scope.$watch('onceCounter', function (newValue, oldValue){
-                console.log("old value : ",oldValue);
+            $scope.$watch('onceCounter', function (newValue,ancienne_Value){
+                console.log("ancienne value : ",ancienne_Value);
                 console.log("new value : ",newValue);
             });
+
             // $scope.$watch('onceCounter', function (newValue, oldValue) {
   //   console.log("onceCounter old value: ", oldValue);
   //   console.log("onceCounter new value: ", newValue);
